@@ -31,13 +31,6 @@ SuperSet Allows to Connect to ClickHouse I have created Visualizations in SuperS
 
 ![](https://github.com/Iamprashanth-1/hack/blob/main/images/real-arch.png)
 
-## Deployment
-
-To Run This Project Follow below steps
-
-```bash
-  ./start.sh
-```
 
 
 ## Installation
@@ -52,4 +45,32 @@ pip install -r requirements.txt
 Install Kafka From this URL ('https://kafka.apache.org/quickstart)
 
 
-    
+## Deployment
+
+To Run This Project Follow below steps
+
+Start The Zookeeper
+```bash
+  bin/zookeeper-server-start.sh config/zookeeper.properties 
+```
+
+Start the Kafka Server
+```bash
+  bin/kafka-server-start.sh config/server.properties 
+```
+
+If You haven't created a topic use below command
+```bash
+  bin/kafka-topics.sh --create --topic mage-hack --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+
+```
+
+Then run the Producer
+```bash
+  python3 producer.py
+```
+
+Then run the Consumer
+```bash
+  python3 consumer.py
+```
