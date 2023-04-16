@@ -49,6 +49,8 @@ Install Kafka From this URL ('https://kafka.apache.org/quickstart)
 
 To Run This Project Follow below steps
 
+Route to Kafka Installed Path
+
 Start The Zookeeper
 ```bash
   bin/zookeeper-server-start.sh config/zookeeper.properties 
@@ -64,6 +66,8 @@ If You haven't created a topic use below command
   bin/kafka-topics.sh --create --topic mage-hack --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 
 ```
+
+Route to Project Path
 
 Then run the Producer
 ```bash
