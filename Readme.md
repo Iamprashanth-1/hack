@@ -23,7 +23,9 @@ SuperSet Allows to Connect to ClickHouse I have created Visualizations in SuperS
 
 
 
+## Architecture
 
+![](https://github.com/Iamprashanth-1/hack/blob/main/images/arch.png)
 
 
 ## Deployment
@@ -46,8 +48,5 @@ pip install -r requirements.txt
 ```
 Install Kafka From this URL ('https://kafka.apache.org/quickstart)
 
-```bash
-  npm install my-project
-  cd my-project
-```
+
     
