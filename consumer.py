@@ -60,23 +60,22 @@ except Exception as e:
 
 
 if consumer and session:
-    massage_id = 0
+    message_id = 0
     for message in consumer:
         if (message.value):
             try:
-                massage_id += 1
-                new_data = {'Id': massage_id}
+                message_id += 1
+                new_data = {'Id': message_id}
                 new_data.update(message.value)
                 
                 final_data = new_data
                 # print(final_data)
-                hg = f'''
+                query = f'''
                 Insert into ecomdata (Id, InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, country)
                 values({final_data.get('Id')}, '{final_data.get('InvoiceNo')}', '{final_data.get('StockCode')}', '{str(final_data.get('Description')).replace("'",'')}', {final_data.get('Quantity')}, '{final_data.get('InvoiceDate')}', {final_data.get('UnitPrice')}, '{final_data.get('CustomerID')}', '{final_data.get('country')}')
                 '''
-                client.command(hg)
-                # print(massage_id)
-                # client.command(
-                #     f"INSERT INTO ecomdata JSON VALUES'{final_data}'")
+                client.command(query)
+                # print(message_id)
+                
             except Exception as e:
                 print("An error occurred while inserting data into ClickHouse:", e)
