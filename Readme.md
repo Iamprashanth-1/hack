@@ -11,15 +11,15 @@ I have Used These set of Tools:
 
  -> Visualization : Apache-SuperSet
 
-I have Picked Sample Data of E-commerce Customer Data From Kaggle('https://www.kaggle.com/datasets/carrie1/ecommerce-data?resource=download')
+I obtained a sample dataset of e-commerce customer data from Kaggle('https://www.kaggle.com/datasets/carrie1/ecommerce-data?resource=download')
 
-I am using this Data as Real-Time data. I am Ingesting this data to Kafka Topic as as Producer.
+I am using this Data as Real-Time data. I am Ingesting this data to Kafka Topic as a Producer.
 
-I am Consuming the same data from Kafka Topic and exporting to ClickHouse. Currently I am not making any set of Transformations. If we want any set of Transformations we can add one layer and Transform and export data to ClickHouse.
+I am currently consuming data from a Kafka topic and exporting it to ClickHouse, without applying any transformations. If needed, we can add an additional layer for transformations to process the data before exporting it to ClickHouse.
 
 ## Visualization:
 
-SuperSet Allows to Connect to ClickHouse I have created Visualizations in SuperSet Heads can look at the dashboard and make neccesary decisions.
+SuperSet Allows to Connect to ClickHouse. I have created Visualizations in SuperSet Heads can look at the dashboard and make neccesary decisions.
 
 
 
@@ -42,7 +42,7 @@ Install all the requirements using below command
 ```bash
 pip install -r requirements.txt
 ```
-Install Kafka From this URL ('https://kafka.apache.org/quickstart)
+Install Kafka From this URL ('https://kafka.apache.org/)
 
 
 ## Deployment
