@@ -1,0 +1,6 @@
+kafka
+pandas
+numpy
+sqlalchemy
+clickhouse-connect
+apache-superset
