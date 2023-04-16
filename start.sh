@@ -6,8 +6,7 @@
 
 # # Install Java
 # sudo yum install java-1.8.0-openjdk
-cd ..
-cd temp
+
 # Go to the extracted Kafka directory
 cd kafka_2.13-3.2.1
 
@@ -25,9 +24,9 @@ sleep 5 &
 bin/kafka-server-start.sh config/server.properties 
 
 
-# python3 /home/revos/mage-hack/producer.py &
+# python3 producer.py &
 
-# python3 /home/revos/mage-hack/consumer.py 
+# python3 consumer.py 
 
 
 # Create a topic named "mage-hack"

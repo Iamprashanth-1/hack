@@ -3,7 +3,7 @@
 
 Hi, Team This is Prashanth below are the sections describe the flow.
 
-I have Used These set of Tools
+I have Used These set of Tools:
 
  -> SQL (OLAP) : ClickHouse (Since ClickHouse Provides 30 Days Free Trail)
 
