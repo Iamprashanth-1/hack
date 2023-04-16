@@ -23,10 +23,13 @@ SuperSet Allows to Connect to ClickHouse I have created Visualizations in SuperS
 
 
 
-## Architecture
+## Current Architecture
 
 ![](https://github.com/Iamprashanth-1/hack/blob/main/images/arch.png)
 
+## Actual Architecture
+
+![](https://github.com/Iamprashanth-1/hack/blob/main/images/real-arch.png)
 
 ## Deployment
 
