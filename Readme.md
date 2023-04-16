@@ -78,3 +78,23 @@ Then run the Consumer
 ```bash
   python3 consumer.py
 ```
+
+
+## FAQ
+
+Q. Why didn't you use Mage-AI, Prashanth?
+
+Ans. Simple I have small Piece of code and I am not making much set of transformations, so using Mage-AI for this project doesn't make any sense to me.
+
+Q2. So then why did you made small project?
+
+Ans. The hack started on Saturday night at 10:30 PM, but I wasn't able to work on it during the night. Since the next day was Sunday and I had other commitments, I could only dedicate limited time to it and completed as much as I could.
+
+Q3. Have you loved the hack?
+
+Ans. Certainly, yes!
+
+
+## Any thing left?
+
+I haven't used chatgpt
