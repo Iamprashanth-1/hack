@@ -30,10 +30,7 @@ bin/kafka-server-start.sh config/server.properties
 # python3 /home/revos/mage-hack/consumer.py 
 
 
-# Create a topic named "demo_test"
+# Create a topic named "mage-hack"
 # bin/kafka-topics.sh --create --topic mage-hack --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 
 
-# # Start a Kafka producer and consumer in separate terminal windows
-# bin/kafka-console-producer.sh --topic demo_test --bootstrap-server localhost:9092
-# bin/kafka-console-consumer.sh --topic demo_test --bootstrap-server localhost:9092
